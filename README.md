@@ -35,8 +35,8 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 2 | LBGAT                                            | WRN-34-10 | 62.31 | 30.44 | - | - |
 | 3 | LAS-AT                                           | WRN-34-10 | 62.99 | 31.20 | - | - |
 | 4 | ACAT                                             | WRN-34-10 | 65.75 | 30.23 | - | - |
-| 5 | **IKL-AT**                                       | WRN-34-10 | **66.51** | **31.43** | - | - |
-| 6 | **IKL-AT**                                       | WRN-34-10 | 64.08 | **31.65** | - | - |
+| 5 | **IKL-AT**                                       | WRN-34-10 | **66.51** | **31.43** | [model](https://drive.google.com/file/d/1NaWPX5w32xTiny91kJ6SJxSejCzsD1dy/view?usp=sharing) | [log](https://drive.google.com/file/d/1GzRey51JGmYNZTV79M_qHCL03tIf6X1P/view?usp=sharing) |
+| 6 | **IKL-AT**                                       | WRN-34-10 | 64.08 | **31.65** | [model](https://drive.google.com/file/d/1pEcMipxf9z_-o6iH56jzt9oPL4x0R5fC/view?usp=sharing) | [log](https://drive.google.com/file/d/1nJqHcTxiSE0AeRCqL0KoBwZ1qWnX3pOr/view?usp=sharing) |
 
 
 ### CIFAR-100 with synthesized data
@@ -45,7 +45,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 1 | Wang et al. (better diffusion models) 1M         | WRN-28-10 | 68.06 | 35.65 | - | - |
 | 2 | Wang et al. (better diffusion models) 50M        | WRN-28-10 | 72.58 | 38.83 | - | - |
 | 3 | **IKL-AT** 1M                                    | WRN-28-10 | 68.99 | 35.89 | - | - |
-| 4 | **IKL-AT** 50M                                   | WRN-28-10 | **73.85** | **39.18** | - | - |
+| 4 | **IKL-AT** 50M                                   | WRN-28-10 | **73.85** | **39.18** | [model](https://drive.google.com/file/d/1Leec2X9kGBnBSuTiYytdb4_wR50ibTE8/view?usp=sharing) | [log](https://drive.google.com/file/d/1BcfEOhqGigxkI4GUmWvE27614mXEZVZP/view?usp=sharing) |
 
 
 ### CIFAR-10 with basic data preprocessing (random crop and random horizontal flip)
@@ -55,7 +55,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 2 | LBGAT                                            | WRN-34-20 | 88.70 | 53.57 | - | - |
 | 3 | LAS-AT                                           | WRN-34-10 | 87.74 | 55.52 | - | - |
 | 4 | ACAT                                             | WRN-34-10 | 82.41 | 55.36 | - | - |
-| 5 | **IKL-AT**                                       | WRN-34-10 | 85.31 | **57.13** | - | - |
+| 5 | **IKL-AT**                                       | WRN-34-10 | 85.31 | **57.13** | [model](https://drive.google.com/file/d/1SFdNdKE6ezI6OsINWX-h74dGo2-9u3Ac/view?usp=sharing) | [log](https://drive.google.com/file/d/1Uz6EjNRthCHpJvIbrGHGcMqluHDe70Ix/view?usp=sharing) |
 
 
 
@@ -65,7 +65,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 1 | Wang et al. (better diffusion models) 1M         | WRN-28-10 | 91.12 | 63.35 | - | - |
 | 2 | Wang et al. (better diffusion models) 20M        | WRN-28-10 | 92.44 | 67.31 | - | - |
 | 3 | **IKL-AT** 1M                                    | WRN-28-10 | 90.75 | 63.54 | - | - |
-| 4 | **IKL-AT** 20M                                   | WRN-28-10 | 92.16 | **67.75** | - | - |
+| 4 | **IKL-AT** 20M                                   | WRN-28-10 | 92.16 | **67.75** | [model](https://drive.google.com/file/d/1gEodZ4ushbRPaaVfS_vjJyldH3wJg4zV/view?usp=sharing) | [log](https://drive.google.com/file/d/1tVSeSeum-q2v2CnIBIwwH2xjI5bA2WYd/view?usp=sharing) |
 
 ## Training Scripts
 Full code will be released soon
