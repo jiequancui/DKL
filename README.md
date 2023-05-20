@@ -25,7 +25,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 
 
 ## Results and Pretrained Models for Adversarial Robustness
-**By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies on [auto-attack](https://robustbench.github.io/) **.
+**By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
 
 ### CIFAR-100 with basic data preprocessing (random crop and random horizontal flip)
