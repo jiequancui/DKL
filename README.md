@@ -21,7 +21,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD    | ResNet-50 | MobileNet | 0.526 s/iter | 72.56 | - | - | 
  | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
- | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.64** | - | - |
+ | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | - |
 
 
 ## Results and Pretrained Models for Adversarial Robustness
