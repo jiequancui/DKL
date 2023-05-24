@@ -69,3 +69,20 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 
 ## Training Scripts
 Full code will be released soon
+
+# Contact
+If you have any questions, feel free to contact us through email (jiequancui@gmail.com) or Github issues. Enjoy!
+
+# BibTex
+If you find this code or idea useful, please consider citing our related work:
+```
+@inproceedings{cui2021learnable,
+  title={Learnable boundary guided adversarial training},
+  author={Cui, Jiequan and Liu, Shu and Wang, Liwei and Jia, Jiaya},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={15721--15730},
+  year={2021}
+}
+
+
+```
