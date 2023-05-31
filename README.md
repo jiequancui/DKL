@@ -76,6 +76,13 @@ If you have any questions, feel free to contact us through email (jiequancui@gma
 # BibTex
 If you find this code or idea useful, please consider citing our related work:
 ```
+@article{cui2023decoupled,
+  title={Decoupled Kullback-Leibler Divergence Loss},
+  author={Cui, Jiequan and Tian, Zhuotao and Zhong, Zhisheng and Qi, Xiaojuan and Yu, Bei and Zhang, Hanwang},
+  journal={arXiv preprint arXiv:2305.13948},
+  year={2023}
+}
+
 @inproceedings{cui2021learnable,
   title={Learnable boundary guided adversarial training},
   author={Cui, Jiequan and Liu, Shu and Wang, Liwei and Jia, Jiaya},
