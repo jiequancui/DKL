@@ -27,6 +27,12 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 ## Results and Pretrained Models for Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
+### CIFAR-100 with autoaug
+| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
+| 1 | DAJAT   | WRN-34-10 | 68.74 | 31.30 | - | - |
+| 2 | **IKL-AT**                                       | WRN-34-10 | 65.93 | **32.52** | [model](https://drive.google.com/file/d/1kQQpVVtlS9uBC4oZ3ei9OHly1yriU1UU/view?usp=sharing) | [log](https://drive.google.com/file/d/1wvD6I2yojK5SJ4gFnkU9uwDRkU7mgZPH/view?usp=sharing) |
+
 
 ### CIFAR-100 with basic data preprocessing (random crop and random horizontal flip)
 | # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
