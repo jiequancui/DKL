@@ -38,7 +38,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | 1 | AWP                                              | WRN-34-10 | 60.38 | 28.86 | - | - |
-| 2 | LBGAT                                            | WRN-34-10 | 62.31 | 30.44 | - | - |
+| 2 | LBGAT                                            | WRN-34-10 | 62.31 | 29.33 | - | - |
 | 3 | LAS-AT                                           | WRN-34-10 | 62.99 | 30.77 | - | - |
 | 4 | ACAT                                             | WRN-34-10 | 65.75 | 30.23 | - | - |
 | 5 | **IKL-AT**                                       | WRN-34-10 | **66.51** | **31.43** | [model](https://drive.google.com/file/d/1NaWPX5w32xTiny91kJ6SJxSejCzsD1dy/view?usp=sharing) | [log](https://drive.google.com/file/d/1GzRey51JGmYNZTV79M_qHCL03tIf6X1P/view?usp=sharing) |
