@@ -73,8 +73,20 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 3 | **IKL-AT** 1M                                    | WRN-28-10 | 90.75 | 63.54 | - | - |
 | 4 | **IKL-AT** 20M                                   | WRN-28-10 | 92.16 | **67.75** | [model](https://drive.google.com/file/d/1gEodZ4ushbRPaaVfS_vjJyldH3wJg4zV/view?usp=sharing) | [log](https://drive.google.com/file/d/1tVSeSeum-q2v2CnIBIwwH2xjI5bA2WYd/view?usp=sharing) |
 
-## Training Scripts
-Full code will be released soon
+## Training
+```
+For the adversarial training task:
+cd adv_training
+bash sh/train_dkl_cifar100.sh
+```
+
+## Evaluation
+before running the evaluation with auto-attack, please download the pre-trained models.
+```
+cd adv_training/auto_attacks
+bash sh/eval.sh
+```
+
 
 # Contact
 If you have any questions, feel free to contact us through email (jiequancui@gmail.com) or Github issues. Enjoy!
