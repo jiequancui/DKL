@@ -74,6 +74,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 4 | **IKL-AT** 20M                                   | WRN-28-10 | 92.16 | **67.75** | [model](https://drive.google.com/file/d/1gEodZ4ushbRPaaVfS_vjJyldH3wJg4zV/view?usp=sharing) | [log](https://drive.google.com/file/d/1tVSeSeum-q2v2CnIBIwwH2xjI5bA2WYd/view?usp=sharing) |
 
 ## Training
+More training scripts will be provided soon to reproduce our results on knowledge distillation and adversarial training tasks.
 ```
 For the adversarial training task:
 cd adv_training
