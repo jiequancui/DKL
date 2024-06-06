@@ -57,6 +57,7 @@ parser.add_argument('--resume-optim', default='', type=str,
                     help='directory of optimizer for retraining')
 parser.add_argument('--save-freq', '-s', default=1, type=int, metavar='N',
                     help='save frequency')
+
 # AWP
 parser.add_argument('--awp-gamma', default=0.005, type=float,
                     help='whether or not to add parametric noise')
@@ -77,12 +78,10 @@ parser.add_argument('--aug', default='basic', type=str,
                     help='aug strategy')
 parser.add_argument('--gamma', default=1.0, type=float,
                     help='loss weight for aug data')
-parser.add_argument('--lr-warmup', default=10, type=int,
+parser.add_argument('--lr-warmup', default=0, type=int,
                     help='warmup learning rate')
 parser.add_argument('--m', default=1.0, type=float,
                     help='momentum weight')
-parser.add_argument('--ls', default=0.0, type=float,
-                    help='label smoothing')
 
 
 args = parser.parse_args()
@@ -106,9 +105,15 @@ model_dir = args.model_dir + "/" + args.mark
 if not os.path.exists(model_dir):
     os.makedirs(model_dir)
 use_cuda = not args.no_cuda and torch.cuda.is_available()
-torch.manual_seed(args.seed)
 device = torch.device("cuda" if use_cuda else "cpu")
 kwargs = {'num_workers': 12, 'pin_memory': True} if use_cuda else {}
+
+# SEED
+SEED=args.seed
+torch.manual_seed(SEED)
+torch.cuda.manual_seed(SEED)
+np.random.seed(SEED)
+torch.backends.cudnn.deterministic=True
 
 # setup data loader
 transform_train = transforms.Compose([
@@ -479,12 +484,6 @@ def main():
                        os.path.join(model_dir, 'ours-model-epoch{}.pt'.format(epoch)))
             torch.save(optimizer.state_dict(),
                        os.path.join(model_dir, 'ours-opt-checkpoint_epoch{}.tar'.format(epoch)))
-
-        if epoch >=args.epochs-1:
-            for idx, start_ep, tau, new_state_dict in zip(range(len(tau_list)), start_wa, tau_list, exp_avgs):
-                if start_ep <= epoch:
-                    torch.save(new_state_dict,os.path.join(model_dir, 'ours-model-epoch-SWA{}{}{}.pt'.format(tau,start_ep,epoch)))
-
 
 if __name__ == '__main__':
     main()
