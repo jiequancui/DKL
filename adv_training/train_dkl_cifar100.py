@@ -68,12 +68,12 @@ parser.add_argument('--awp-warmup', default=10, type=int,
 ## DKL
 parser.add_argument('--mark', type=str)
 parser.add_argument('--train_budget', type=str, default='low')
-parser.add_argument('--alpha', default=1.0, type=float,
+parser.add_argument('--alpha', default=4.0, type=float,
                     help='regularization, i.e., 1/lambda in TRADES')
-parser.add_argument('--beta', default=15.0, type=float,
+parser.add_argument('--beta', default=20.0, type=float,
                     help='regularization, i.e., 1/lambda in TRADES')
-parser.add_argument('--T', default=1.0, type=float,
-                    help='label smoothing')
+parser.add_argument('--T', default=4.0, type=float,
+                    help='temperature')
 parser.add_argument('--aug', default='basic', type=str,
                     help='aug strategy')
 parser.add_argument('--gamma', default=1.0, type=float,
