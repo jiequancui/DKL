@@ -79,6 +79,8 @@ More training scripts will be provided soon to reproduce our results on knowledg
 For the adversarial training task:
 cd adv_training
 bash sh/train_dkl_cifar100.sh
+bash sh/train_dkl_cifar100_autoaug.sh
+bash sh/train_dkl_cifar10.sh
 ```
 
 ## Evaluation
