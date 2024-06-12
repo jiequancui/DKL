@@ -26,16 +26,17 @@ python train_dkl_cifar100.py \
 
 python swa.py workdir/cifar100_dkl_a4b20t4 0.9 1
 
+# alpha 5.0 for stronger robustness
 python train_dkl_cifar100.py \
        --arch WideResNet34_10 \
        --data CIFAR100 \
        --train_budget 'high' \
-       --mark cifar100_dkl_a5b20t2 \
+       --mark cifar100_dkl_a4b20t2 \
        --epsilon 8 \
        --lr 0.2 \
        --beta 20.0 \
-       --alpha 5.0 \
+       --alpha 4.0 \
        --T 2.0 
 
-python swa.py workdir/cifar100_dkl_a5b20t2 0.9 1
+python swa.py workdir/cifar100_dkl_a4b20t2 0.9 1
 
