@@ -26,3 +26,6 @@ python train_dkl_cifar100.py \
        --gamma 0.3 \
        --epochs 200 \
        --seed 0
+
+python swa.py workdir/cifar100v2_dkl_a4b20t4_gamma03 0.9 1
+
