@@ -46,7 +46,7 @@ parser.add_argument('--step-size', default=2, type=float,
                     help='perturb step size')
 parser.add_argument('--beta', default=6.0, type=float,
                     help='regularization, i.e., 1/lambda in TRADES')
-parser.add_argument('--seed', type=int, default=1, metavar='S',
+parser.add_argument('--seed', type=int, default=0, metavar='S',
                     help='random seed (default: 1)')
 parser.add_argument('--model-dir', default='./workdir',
                     help='directory of model for saving checkpoint')
@@ -88,9 +88,15 @@ model_dir = args.model_dir + "/" + args.mark
 if not os.path.exists(model_dir):
     os.makedirs(model_dir)
 use_cuda = not args.no_cuda and torch.cuda.is_available()
-torch.manual_seed(args.seed)
 device = torch.device("cuda" if use_cuda else "cpu")
 kwargs = {'num_workers': 4, 'pin_memory': True} if use_cuda else {}
+
+# SEED
+SEED=args.seed
+torch.manual_seed(SEED)
+torch.cuda.manual_seed(SEED)
+np.random.seed(SEED)
+torch.backends.cudnn.deterministic=True
 
 # setup data loader
 transform_train = transforms.Compose([

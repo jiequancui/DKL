@@ -23,7 +23,9 @@ python train_dkl_cifar100.py \
        --lr 0.2 \
        --beta 20.0 \
        --alpha 4.0 \
-       --T 4.0 
+       --T 4.0 \
+       --seed 0
+
 
 python swa.py workdir/cifar100_dkl_a4b20t4 0.9 1
 
@@ -36,7 +38,8 @@ python train_dkl_cifar100.py \
        --lr 0.2 \
        --beta 20.0 \
        --alpha 5.0 \
-       --T 4.0 
+       --T 4.0 \
+       --seed 0
 
 python swa.py workdir/cifar100_dkl_a5b20t4 0.9 1
 

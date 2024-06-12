@@ -47,7 +47,7 @@ parser.add_argument('--num-steps', default=10, type=int,
                     help='perturb number of steps')
 parser.add_argument('--step-size', default=2, type=float,
                     help='perturb step size')
-parser.add_argument('--seed', type=int, default=1, metavar='S',
+parser.add_argument('--seed', type=int, default=0, metavar='S',
                     help='random seed (default: 1)')
 parser.add_argument('--model-dir', default='./workdir',
                     help='directory of model for saving checkpoint')
