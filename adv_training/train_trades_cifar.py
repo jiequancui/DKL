@@ -12,7 +12,7 @@ from torch.autograd import Variable
 
 import models
 from utils import Bar, Logger, AverageMeter, accuracy
-from utils_awp import TradesAWP
+from utils_awp_kl import TradesAWP
 
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR TRADES Adversarial Training')
@@ -69,8 +69,6 @@ parser.add_argument('--nat_arch', type=str, default='ResNet18_cifar')
 parser.add_argument('--mark', type=str)
 parser.add_argument('--train_budget', type=str, default='low')
 parser.add_argument('--fix_cls', type=int, default=0)
-parser.add_argument('--prior', action='store_true', default=False,
-                    help='disables CUDA training')
 
 
 args = parser.parse_args()
@@ -114,7 +112,6 @@ testset = getattr(datasets, args.data)(
 train_loader = torch.utils.data.DataLoader(trainset, batch_size=args.batch_size, shuffle=True, drop_last=True, **kwargs)
 test_loader = torch.utils.data.DataLoader(testset, batch_size=args.test_batch_size, shuffle=False, **kwargs)
 
-PRIOR = torch.ones(NUM_CLASSES,).cuda() / NUM_CLASSES
 def perturb_input(model,
                   x_natural,
                   step_size=0.003,
@@ -180,7 +177,6 @@ def train(model, train_loader, optimizer, epoch, awp_adversary, start_wa, tau_li
     print('epoch: {}'.format(epoch))
     bar = Bar('Processing', max=len(train_loader))
 
-    PRIOR = torch.zeros(1,NUM_CLASSES,).cuda()
     for batch_idx, (data, target) in enumerate(train_loader):
         x_natural, target = data.to(device), target.to(device)
 
@@ -266,7 +262,6 @@ def train(model, train_loader, optimizer, epoch, awp_adversary, start_wa, tau_li
             top1=top1.avg)
         bar.next()
     bar.finish()
-    model(prior=PRIOR)
 
     return losses.avg, top1.avg
 
