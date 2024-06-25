@@ -23,4 +23,4 @@ python train_dkl_cifar10.py \
        --epochs 200 \
        --seed 0
 
-python swa.py workdir/cifar10_dkl_a4b20t4 0.9 1
+python swa.py workdir/cifar10_dkl_a4b20t4 0.9 1 200

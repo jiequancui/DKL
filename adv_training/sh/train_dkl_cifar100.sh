@@ -41,5 +41,5 @@ python train_dkl_cifar100.py \
        --T 4.0 \
        --seed 0
 
-python swa.py workdir/cifar100_dkl_a5b20t4 0.9 1
+python swa.py workdir/cifar100_dkl_a5b20t4 0.9 1 200
 
