@@ -42,7 +42,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 | 3 | LAS-AT                                           | WRN-34-10 | 62.99 | 30.77 | - | - |
 | 4 | ACAT                                             | WRN-34-10 | 65.75 | 30.23 | - | - |
 | 5 | **IKL-AT**                                       | WRN-34-10 | **66.51** | **31.43** | [model](https://drive.google.com/file/d/1NaWPX5w32xTiny91kJ6SJxSejCzsD1dy/view?usp=sharing) | [log](https://drive.google.com/file/d/1GzRey51JGmYNZTV79M_qHCL03tIf6X1P/view?usp=sharing) |
-| 6 | **IKL-AT**                                       | WRN-34-10 | 65.76 | **31.91** | [model](https://drive.google.com/file/d/1pEcMipxf9z_-o6iH56jzt9oPL4x0R5fC/view?usp=sharing) | [log](https://drive.google.com/file/d/1nJqHcTxiSE0AeRCqL0KoBwZ1qWnX3pOr/view?usp=sharing) |
+| 6 | **IKL-AT**                                       | WRN-34-10 | 65.76 | **31.91** | [model](https://drive.google.com/file/d/1lgFnfmsCw4UxguAOWSLsg6xUDfGG-HRy/view?usp=sharing) | [log](https://drive.google.com/file/d/19WeOtNsJ-ot1sG80RKEA-iMRgq4sGvNt/view?usp=sharing) |
 
 
 ### CIFAR-100 with synthesized data
