@@ -2,27 +2,17 @@
 This repository contains the implementation code for our NeurIPS 2024 paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
 
 ## Overview
-In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and observe that it is equivalent to the Doupled Kullback-Leibler (DKL) Divergence loss that consists of 1) a weighted Mean Square Error (wMSE) loss and 2) a Cross-Entropy loss incorporating soft labels. From our analysis of the DKL loss, we have identified two areas for improvement. Firstly, we address the limitation of DKL in scenarios like knowledge distillation by breaking its asymmetry property in training optimization. This modification ensures that the wMSE component is always effective during training, providing extra constructive cues. Secondly, we introduce global information into DKL for intra-class consistency regularization. **With these two enhancements, we derive the Improved KullbackLeibler (IKL) Di11 vergence loss and evaluate its effectiveness by conducting experiments on CIFAR12 10/100 and ImageNet datasets, focusing on adversarial training and knowledge dis13 tillation tasks. The proposed approach achieves new state-of-the-art performance on both tasks, demonstrating the substantial practical merits**.
+In this paper, we delve deeper into the Kullback–Leibler (KL) Divergence loss and mathematically prove that it is equivalent to the Decoupled Kullback-Leibler (DKL) Divergence loss that consists of 1) a weighted Mean Square Error ($\mathbf{w}$MSE) loss and 2) a Cross-Entropy loss incorporating soft labels. 
+Thanks to the decomposed formulation of DKL loss, we have identified two areas for improvement. 
+Firstly, we address the limitation of KL/DKL in scenarios like knowledge distillation by breaking its asymmetric optimization property. This modification ensures that the $\mathbf{w}$MSE component is always effective during training, providing extra constructive cues. Secondly, we introduce class-wise global information into KL/DKL to mitigate bias from individual samples. With these two enhancements, we derive the Improved Kullback–Leibler (IKL) Divergence loss and evaluate its effectiveness by conducting experiments on CIFAR-10/100 and ImageNet datasets, focusing on adversarial training and knowledge distillation tasks. The proposed approach achieves new state-of-the-art adversarial robustness on the public leaderboard --- **RobustBench** and competitive performance on knowledge distillation, demonstrating the substantial practical merits.
 
 ![image](https://github.com/jiequancui/DKL/blob/main/figures/dkl.PNG)
 
 
 
 ## Knowledge Distillation
-### ImageNet
 
- | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- | ReviewKD      | ResNet-34 | ResNet18 | 0.319 s/iter | 71.61 | - | - | 
- | DKD           | ResNet-34 | ResNet18 | -            | 71.70 | - | - |
- | **IKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | - |https://github.com/jiequancui/DKL/blob/main/Adv-training-dkl/README.md
- 
- | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
- | ReviewKD    | ResNet-50 | MobileNet | 0.526 s/iter | 72.56 | - | - | 
- | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
- | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | - |
-
+Please refer to [KD-dkl](https://github.com/jiequancui/DKL/blob/main/KD-dkl/README.md) for training and evaluation.
 
 ## Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
