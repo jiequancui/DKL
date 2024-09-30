@@ -26,16 +26,6 @@ bash imagenet_r34_r18_ikl.sh
 ```
 
 
-## Adversarial Robustness
-**By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
-
-Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/blob/main/Adv-training-dkl/README.md) for training and evaluation.
-
-## Semi-supervised Learning
-
-Please refer to [Semi-Supervised-Learning-dkl](https://github.com/jiequancui/DKL/blob/main/Semi-supervised-learning-dkl/README.md) for training and evaluation.
-
-
 # Contact
 If you have any questions, feel free to contact us through email (jiequancui@gmail.com) or Github issues. Enjoy!
 
