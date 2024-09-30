@@ -2,7 +2,7 @@
 This repository contains the implementation code for our **NeurIPS 2024** paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
 
 
-## Semi-supervised Learning 
+## Results for Semi-supervised Learning 
 
 ### CIFAR-100 with 200 labeled-data 
 | # | Method | Model | Acc | log | 
@@ -14,7 +14,7 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
 
 
 
-### Training
+## Training
 Please refer to https://github.com/microsoft/Semi-supervised-learning.git for environment setup.
 ```
 For the semi-supervised learning task:
