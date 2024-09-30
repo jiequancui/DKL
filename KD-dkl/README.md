@@ -9,13 +9,13 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD      | ResNet-34 | ResNet18 | 0.319 s/iter | 71.61 | - | - | 
  | DKD           | ResNet-34 | ResNet18 | -            | 71.70 | - | - |
- | **IKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | - |https://github.com/jiequancui/DKL/blob/main/Adv-training-dkl/README.md
+ | **IKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | [log](https://drive.google.com/file/d/1uFTrIfPI-7BcTfutzulTgYD6xAL5kHH2/view?usp=sharing) |
  
  | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD    | ResNet-50 | MobileNet | 0.526 s/iter | 72.56 | - | - | 
  | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
- | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | - |
+ | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | [log](https://drive.google.com/file/d/1aA5YDqnriNc3w_W-bY1VSCFZ6-OpAbKk/view?usp=sharing) |
 
 
 ## Adversarial Robustness
