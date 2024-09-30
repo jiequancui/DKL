@@ -1,5 +1,5 @@
 # Decoupled Kullback-Leibler (DKL) Divergence Loss
-This repository contains the implementation code for our arXiv paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
+This repository contains the implementation code for our NeurIPS 2024 paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
 
 ## Overview
 In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and observe that it is equivalent to the Doupled Kullback-Leibler (DKL) Divergence loss that consists of 1) a weighted Mean Square Error (wMSE) loss and 2) a Cross-Entropy loss incorporating soft labels. From our analysis of the DKL loss, we have identified two areas for improvement. Firstly, we address the limitation of DKL in scenarios like knowledge distillation by breaking its asymmetry property in training optimization. This modification ensures that the wMSE component is always effective during training, providing extra constructive cues. Secondly, we introduce global information into DKL for intra-class consistency regularization. **With these two enhancements, we derive the Improved KullbackLeibler (IKL) Di11 vergence loss and evaluate its effectiveness by conducting experiments on CIFAR12 10/100 and ImageNet datasets, focusing on adversarial training and knowledge dis13 tillation tasks. The proposed approach achieves new state-of-the-art performance on both tasks, demonstrating the substantial practical merits**.
@@ -15,7 +15,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD      | ResNet-34 | ResNet18 | 0.319 s/iter | 71.61 | - | - | 
  | DKD           | ResNet-34 | ResNet18 | -            | 71.70 | - | - |
- | **IKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | - |
+ | **IKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | - |https://github.com/jiequancui/DKL/blob/main/Adv-training-dkl/README.md
  
  | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -24,71 +24,14 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
  | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | - |
 
 
-## Results and Pretrained Models for Adversarial Robustness
+## Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
-### CIFAR-100 with autoaug
-| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 1 | DAJAT   | WRN-34-10 | 68.74 | 31.30 | - | - |
-| 2 | **IKL-AT**                                       | WRN-34-10 | 65.93 | **32.52** | [model](https://drive.google.com/file/d/1kQQpVVtlS9uBC4oZ3ei9OHly1yriU1UU/view?usp=sharing) | [log](https://drive.google.com/file/d/1wvD6I2yojK5SJ4gFnkU9uwDRkU7mgZPH/view?usp=sharing) |
+Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/blob/main/Adv-training-dkl/README.md) for training and evaluation.
 
+## Semi-supervised Learning
 
-### CIFAR-100 with basic data preprocessing (random crop and random horizontal flip)
-| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 1 | AWP                                              | WRN-34-10 | 60.38 | 28.86 | - | - |
-| 2 | LBGAT                                            | WRN-34-10 | 62.31 | 29.33 | - | - |
-| 3 | LAS-AT                                           | WRN-34-10 | 62.99 | 30.77 | - | - |
-| 4 | ACAT                                             | WRN-34-10 | 65.75 | 30.23 | - | - |
-| 5 | **IKL-AT**                                       | WRN-34-10 | **66.51** | **31.43** | [model](https://drive.google.com/file/d/1NaWPX5w32xTiny91kJ6SJxSejCzsD1dy/view?usp=sharing) | [log](https://drive.google.com/file/d/1GzRey51JGmYNZTV79M_qHCL03tIf6X1P/view?usp=sharing) |
-| 6 | **IKL-AT**                                       | WRN-34-10 | 65.76 | **31.91** | [model](https://drive.google.com/file/d/1lgFnfmsCw4UxguAOWSLsg6xUDfGG-HRy/view?usp=sharing) | [log](https://drive.google.com/file/d/19WeOtNsJ-ot1sG80RKEA-iMRgq4sGvNt/view?usp=sharing) |
-
-
-### CIFAR-100 with synthesized data
-| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 1 | Wang et al. (better diffusion models) 1M         | WRN-28-10 | 68.06 | 35.65 | - | - |
-| 2 | Wang et al. (better diffusion models) 50M        | WRN-28-10 | 72.58 | 38.83 | - | - |
-| 3 | **IKL-AT** 1M                                    | WRN-28-10 | 68.99 | 35.89 | - | - |
-| 4 | **IKL-AT** 50M                                   | WRN-28-10 | **73.85** | **39.18** | [model](https://drive.google.com/file/d/1Leec2X9kGBnBSuTiYytdb4_wR50ibTE8/view?usp=sharing) | [log](https://drive.google.com/file/d/1BcfEOhqGigxkI4GUmWvE27614mXEZVZP/view?usp=sharing) |
-
-
-### CIFAR-10 with basic data preprocessing (random crop and random horizontal flip)
-| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 1 | AWP                                              | WRN-34-10 | 85.36 | 56.17 | - | - |
-| 2 | LBGAT                                            | WRN-34-20 | 88.70 | 53.57 | - | - |
-| 3 | LAS-AT                                           | WRN-34-10 | 87.74 | 55.52 | - | - |
-| 4 | ACAT                                             | WRN-34-10 | 82.41 | 55.36 | - | - |
-| 5 | **IKL-AT**                                       | WRN-34-10 | 85.31 | **57.13** | [model](https://drive.google.com/file/d/1SFdNdKE6ezI6OsINWX-h74dGo2-9u3Ac/view?usp=sharing) | [log](https://drive.google.com/file/d/1Uz6EjNRthCHpJvIbrGHGcMqluHDe70Ix/view?usp=sharing) |
-
-
-
-### CIFAR-10 with synthesized data
-| # | Method | Model | Natural Acc | Robust Acc (AutoAttack) | link | log | 
-| :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| 1 | Wang et al. (better diffusion models) 1M         | WRN-28-10 | 91.12 | 63.35 | - | - |
-| 2 | Wang et al. (better diffusion models) 20M        | WRN-28-10 | 92.44 | 67.31 | - | - |
-| 3 | **IKL-AT** 1M                                    | WRN-28-10 | 90.75 | 63.54 | - | - |
-| 4 | **IKL-AT** 20M                                   | WRN-28-10 | 92.16 | **67.75** | [model](https://drive.google.com/file/d/1gEodZ4ushbRPaaVfS_vjJyldH3wJg4zV/view?usp=sharing) | [log](https://drive.google.com/file/d/1tVSeSeum-q2v2CnIBIwwH2xjI5bA2WYd/view?usp=sharing) |
-
-## Training
-More training scripts will be provided soon to reproduce our results on knowledge distillation and adversarial training tasks.
-```
-For the adversarial training task:
-cd adv_training
-bash sh/train_dkl_cifar100.sh
-bash sh/train_dkl_cifar100_autoaug.sh
-bash sh/train_dkl_cifar10.sh
-```
-
-## Evaluation
-before running the evaluation with auto-attack, please download the pre-trained models.
-```
-cd adv_training/auto_attacks
-bash sh/eval.sh
-```
+Please refer to [Semi-Supervised-Learning-dkl](https://github.com/jiequancui/DKL/blob/main/Semi-supervised-learning-dkl/README.md) for training and evaluation.
 
 
 # Contact
