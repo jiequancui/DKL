@@ -2,7 +2,7 @@
 This repository contains the implementation code for our NeurIPS 2024 paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
 
 
-## Knowledge Distillation
+## Results for Knowledge Distillation
 ### ImageNet
 
  | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
@@ -17,7 +17,7 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
  | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | [log](https://drive.google.com/file/d/1aA5YDqnriNc3w_W-bY1VSCFZ6-OpAbKk/view?usp=sharing) |
 
-### Training 
+## Training 
 Please refer to https://github.com/megvii-research/mdistiller for environment setup. More training scripts will be available.
 
 ```
