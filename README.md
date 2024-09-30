@@ -8,7 +8,7 @@ In this paper, we delve deeper into the KullbackLeibler (KL) Divergence loss and
 
 
 
-## Results and Pretrained Models for Knowledge Distillation
+## Knowledge Distillation
 ### ImageNet
 
  | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
