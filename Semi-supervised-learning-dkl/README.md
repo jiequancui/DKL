@@ -7,10 +7,10 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
 ### CIFAR-100 with 200 labeled-data 
 | # | Method | Model | Acc | log | 
 | :---: | :---: | :---: | :---: | :---: |
-| 1 | FixMatch | ViT-tiny | - | - |
-| 2 | FixMatch-dkl | ViT-tiny | - | - |
-| 3 | MeanTeacher | ViT-tiny | - | - |
-| 4 | MeanTeacher-dkl | ViT-tiny | - | - |
+| 1 | FixMatch | ViT-tiny | 69.89 | [log](https://drive.google.com/file/d/1GYi8TaWfE9UDxRTi8BxPk20AQSKJqUwp/view?usp=sharing) |
+| 2 | FixMatch-dkl | ViT-tiny | 70.57 | [log](https://drive.google.com/file/d/142S1LWILL1x0p-hTzlHDKzOvaAdFRfwJ/view?usp=sharing) |
+| 3 | MeanTeacher | ViT-tiny | 67.49 | [log](https://drive.google.com/file/d/16SKOA7fQ2WQ6uY3rUXuytiA3mqK4xS1Y/view?usp=sharing) |
+| 4 | MeanTeacher-dkl | ViT-tiny | 68.75 | [log](https://drive.google.com/file/d/1t4836seXFgm6Snfx1cRCV2QCe1c6Sq6T/view?usp=sharing) |
 
 
 
