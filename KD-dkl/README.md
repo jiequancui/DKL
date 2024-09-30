@@ -17,6 +17,14 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
  | **IKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.84** | - | [log](https://drive.google.com/file/d/1aA5YDqnriNc3w_W-bY1VSCFZ6-OpAbKk/view?usp=sharing) |
 
+### Training 
+Please refer to https://github.com/megvii-research/mdistiller for environment setup. More training scripts will be available.
+
+```
+cd DKL/KD-dkl
+bash imagenet_r34_r18_ikl.sh
+```
+
 
 ## Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
