@@ -27,4 +27,5 @@ LOG:
 IKL_KD:
   ALPHA: 1.0
   BETA: 0.5
-  GI: False
+  GI: True
+  T2: 1.0 
