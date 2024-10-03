@@ -1,6 +1,6 @@
 EXPERIMENT:
   NAME: ""
-  TAG: "ikl_kd_a1b05,res34,res18"
+  TAG: "ikl_kd,res34,res18"
   PROJECT: "imagenet"
 DATASET:
   TYPE: "imagenet"
