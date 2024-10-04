@@ -22,7 +22,8 @@ Please refer to https://github.com/megvii-research/mdistiller for environment se
 
 ```
 cd DKL/KD-dkl
-bash imagenet_r34_r18_ikl.sh
+bash sh/imagenet_r34_r18_ikl.sh
+bash sh/imagenet_r50_mv_ikl.sh
 ```
 
 
