@@ -25,6 +25,6 @@ LOG:
   SAVE_CHECKPOINT_FREQ: 10
 IKL_KD:
   ALPHA: 4.0 
-  BETA: 2.0
-  GI: False
-  T2: 100.0
+  BETA: 1.0
+  GI: True 
+  T2: 1.0
