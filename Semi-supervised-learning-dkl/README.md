@@ -45,3 +45,23 @@ If you find this code or idea useful, please consider citing our related work:
   pages={15721--15730},
   year={2021}
 }
+
+@ARTICLE{10130611,
+  author={Cui, Jiequan and Zhong, Zhisheng and Tian, Zhuotao and Liu, Shu and Yu, Bei and Jia, Jiaya},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Generalized Parametric Contrastive Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-12},
+  doi={10.1109/TPAMI.2023.3278694}}
+
+
+@inproceedings{cui2021parametric,
+  title={Parametric contrastive learning},
+  author={Cui, Jiequan and Zhong, Zhisheng and Liu, Shu and Yu, Bei and Jia, Jiaya},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={715--724},
+  year={2021}
+}
+```
