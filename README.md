@@ -14,6 +14,12 @@ Firstly, we address the limitation of KL/DKL in scenarios like knowledge distill
 
 Please refer to [KD-dkl](https://github.com/jiequancui/DKL/blob/main/KD-dkl) for training and evaluation.
 
+
+## Imbalanced Knowledge Distillation
+
+Please refer to [Imbalanced-KD-dkl](https://github.com/jiequancui/DKL/blob/main/Imbalanced-KD-dkl) for training and evaluation.
+
+
 ## Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
@@ -42,6 +48,25 @@ If you find this code or idea useful, please consider citing our related work:
   author={Cui, Jiequan and Liu, Shu and Wang, Liwei and Jia, Jiaya},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
   pages={15721--15730},
+  year={2021}
+}
+
+@ARTICLE{10130611,
+  author={Cui, Jiequan and Zhong, Zhisheng and Tian, Zhuotao and Liu, Shu and Yu, Bei and Jia, Jiaya},
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
+  title={Generalized Parametric Contrastive Learning}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-12},
+  doi={10.1109/TPAMI.2023.3278694}}
+
+
+@inproceedings{cui2021parametric,
+  title={Parametric contrastive learning},
+  author={Cui, Jiequan and Zhong, Zhisheng and Liu, Shu and Yu, Bei and Jia, Jiaya},
+  booktitle={Proceedings of the IEEE/CVF international conference on computer vision},
+  pages={715--724},
   year={2021}
 }
 

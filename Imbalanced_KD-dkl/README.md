@@ -9,8 +9,8 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | Baseline      | - | ResNet18 | 41.150 | - | - |
  | Baseline      | - | ResNet50 | 45.476 | - | - |
  | Baseline      | - | ResNeXt101-32x4d | 48.024 | - | - |
- | KL-KD         | ResNeXt101-32x4d | ResNet18 |  | 43.974 | - |
- | KL-KD         | ResNeXt101-32x4d | ResNet50 |  | 48.310 | - |
+ | KL-KD         | ResNeXt101-32x4d | ResNet18 | 43.974 | - | - |
+ | KL-KD         | ResNeXt101-32x4d | ResNet50 | 48.310 | - | - |
  | **IKL-KD**    | ResNeXt101-32x4d | ResNet18 | **44.880** | - | [log]() |
  | **IKL-KD**    | ResNeXt101-32x4d | ResNet50 | **49.224** | - | [log]() |
 
@@ -20,8 +20,8 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | :---: | :---: | :---: | :---: | :---: | :---: |
  | Baseline      | - | ResNet18 | 41.150 | - | - |
  | Baseline      | - | ResNet50 | 45.476 | - | - |
- | KL-KD         | ResNet18 | ResNet18 |  | - | - |
- | KL-KD         | ResNet50 | ResNet50 |  | 47.036 | - |
+ | KL-KD         | ResNet18 | ResNet18 | - | -  | - |
+ | KL-KD         | ResNet50 | ResNet50 | 47.036 | - | - |
  | **IKL-KD**    | ResNet18 | ResNet18 | **-** | - | [log]() |
  | **IKL-KD**    | ResNet50 | ResNet50 | **47.504** | - | [log]() |
 
