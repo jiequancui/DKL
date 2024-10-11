@@ -29,5 +29,5 @@ python imagenetlt_distill_dkl.py \
   --model_fixed \
   --model_fixed_path pretrained_models/x101_baseline_90e.pth \
   --distill_loss 'IKL_KD' \
-  --alpha 3.0 \
+  --alpha 4.0 \
   --beta 4.0 

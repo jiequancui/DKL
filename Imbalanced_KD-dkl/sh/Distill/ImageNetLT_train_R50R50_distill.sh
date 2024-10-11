@@ -25,7 +25,7 @@ python imagenetlt_distill_dkl.py \
   -b 128 \
   --distill \
   --distill_loss 'KL_KD' \
-  --distill_w 3.0  \
+  --distill_w 1.0  \
   --teacher_arch resnet50 \
   --model_fixed \
   --model_fixed_path pretrained_models/r50_baseline_90e.pth
