@@ -1,5 +1,5 @@
-# Decoupled Kullback-Leibler (DKL) Divergence Loss
-This repository contains the implementation code for our NeurIPS 2024 paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
+# Generalized Kullback-Leibler (GKL) Divergence Loss
+This repository contains the implementation code for our **NeurIPS 2024** paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948) and our arXiv paper **Generalized Kullback-Leibler Divergence Loss**, [arXiv]().
 
 
 ## Knowledge Distillation on ImageNet-LT
@@ -11,20 +11,8 @@ This repository contains the implementation code for our NeurIPS 2024 paper **De
  | Baseline      | - | ResNeXt101-32x4d | 48.024 | - | - |
  | KL-KD         | ResNeXt101-32x4d | ResNet18 | 44.318 | - | - |
  | KL-KD         | ResNeXt101-32x4d | ResNet50 | 48.310 | - | - |
- | **IKL-KD**    | ResNeXt101-32x4d | ResNet18 | **45.208** | - | [log]() |
- | **IKL-KD**    | ResNeXt101-32x4d | ResNet50 | **49.224** | - | [log]() |
-
-## Self-KD on ImageNet-LT
-
- | Method | Model-Teacher | Model-Student | Top-1 Acc(%) | link | log | 
- | :---: | :---: | :---: | :---: | :---: | :---: |
- | Baseline      | - | ResNet18 | 41.150 | - | - |
- | Baseline      | - | ResNet50 | 45.476 | - | - |
- | KL-KD         | ResNet18 | ResNet18 | 42.732 | -  | - |
- | KL-KD         | ResNet50 | ResNet50 | 47.036 | - | - |
- | **IKL-KD**    | ResNet18 | ResNet18 | **43.062** | - | [log]() |
- | **IKL-KD**    | ResNet50 | ResNet50 | **47.504** | - | [log]() |
-
+ | **GKL-KD**    | ResNeXt101-32x4d | ResNet18 | **45.40** | - | [log]() |
+ | **GKL-KD**    | ResNeXt101-32x4d | ResNet50 | **49.40** | - | [log]() |
 
  
 ## Training 
