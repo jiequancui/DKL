@@ -19,18 +19,18 @@ Open-sourced code from [DKD](https://github.com/megvii-research/mdistiller) is u
 
 ## Knowledge Distillation
 
-Please refer to [KD-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv2/KD-dkl) for training and evaluation.
+Please refer to [KD-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv2/KD-dkl) for training and evaluation.
 
 
 ## Imbalanced Knowledge Distillation
 
-Please refer to [Imbalanced-KD-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv2/Imbalanced-KD-dkl) for training and evaluation.
+Please refer to [Imbalanced-KD-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv2/Imbalanced_KD-dkl) for training and evaluation.
 
 
 ## Adversarial Robustness
 **By 2023/05/20**, with GKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
-Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv2/Adv-training-dkl) for training and evaluation.
+Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv2/Adv-training-dkl) for training and evaluation.
 
 
 
@@ -50,22 +50,22 @@ Firstly, we address the limitation of KL/DKL in scenarios like knowledge distill
 
 ## Knowledge Distillation
 
-Please refer to [KD-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv1/KD-dkl) for training and evaluation.
+Please refer to [KD-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv1/KD-dkl) for training and evaluation.
 
 
 ## Imbalanced Knowledge Distillation
 
-Please refer to [Imbalanced-KD-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv1/Imbalanced-KD-dkl) for training and evaluation.
+Please refer to [Imbalanced-KD-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv1/Imbalanced_KD-dkl) for training and evaluation.
 
 
 ## Adversarial Robustness
 **By 2023/05/20**, with IKL loss, we achieve new state-of-the-art adversarial robustness under settings that **with/without augmentation strategies** on [auto-attack](https://robustbench.github.io/).
 
-Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv1/Adv-training-dkl) for training and evaluation.
+Please refer to [Adv-training-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv1/Adv-training-dkl) for training and evaluation.
 
 ## Semi-supervised Learning
 
-Please refer to [Semi-Supervised-Learning-dkl](https://github.com/jiequancui/DKL/blob/main/DKLv1/Semi-supervised-learning-dkl) for training and evaluation.
+Please refer to [Semi-Supervised-Learning-dkl](https://github.com/jiequancui/DKL/tree/main/DKLv1/Semi-supervised-learning-dkl) for training and evaluation.
 
 
 # Contact
