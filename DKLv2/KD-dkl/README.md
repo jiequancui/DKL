@@ -1,5 +1,5 @@
-# Decoupled Kullback-Leibler (DKL) Divergence Loss
-This repository contains the implementation code for our NeurIPS 2024 paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948v1.pdf).
+# Generalized Kullback-Leibler (DKL) Divergence Loss
+This repository contains the implementation code for our **NeurIPS 2024** paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948) and our arXiv paper **Generalized Kullback-Leibler Divergence Loss**, [arXiv]().
 
 
 ## Results for Knowledge Distillation
