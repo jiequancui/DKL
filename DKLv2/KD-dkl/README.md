@@ -21,7 +21,7 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
 Please refer to https://github.com/megvii-research/mdistiller for environment setup. More training scripts will be available.
 
 ```
-cd DKL/KD-dkl
+cd DKL/DKLv2/KD-dkl
 bash sh/cifar100_gkl.sh
 bash sh/imagenet_r34_r18_ikl.sh
 bash sh/imagenet_r50_mv_ikl.sh
