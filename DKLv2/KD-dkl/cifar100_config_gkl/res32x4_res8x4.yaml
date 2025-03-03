@@ -1,0 +1,26 @@
+EXPERIMENT:
+  NAME: ""
+  TAG: "gkl,res32x4,res8x4"
+  PROJECT: "cifar100_final"
+DISTILLER:
+  TYPE: "GKL_KD"
+  TEACHER: "resnet32x4"
+  STUDENT: "resnet8x4"
+SOLVER:
+  BATCH_SIZE: 64
+  EPOCHS: 240
+  LR: 0.05
+  LR_DECAY_STAGES: [150, 180, 210]
+  LR_DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0005
+  MOMENTUM: 0.9
+  TYPE: "SGD"
+GKL_KD:
+  NUM_CLASSES: 100
+  ALPHA: 1.0
+  BETA: 16.0
+  GAMMA: 0.05
+  T2: 4.0
+  GI: True 
+  T: 4.0
+  WARMUP: 20
