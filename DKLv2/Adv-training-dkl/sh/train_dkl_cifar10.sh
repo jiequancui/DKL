@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=cifar10_dkl_a4b20t4
+#SBATCH --job-name=cifar10_dkl
 #SBATCH --mail-user=jiequancui@link.cuhk.edu.hk
 #SBATCH --output=cifar10_dkl.log
 #SBATCH --mail-type=ALL
@@ -24,3 +24,20 @@ python train_dkl_cifar10.py \
        --seed 0
 
 python swa.py workdir/cifar10_dkl_a4b20t4 0.9 1 200
+
+
+python train_dkl_cifar10.py \
+       --arch WideResNet34_10 \
+       --data CIFAR10 \
+       --train_budget 'high' \
+       --mark cifar10_dkl_a4b20g02 \
+       --epsilon 8 \
+       --lr 0.2 \
+       --beta 20.0 \
+       --alpha 4.0 \
+       --gamma 0.2
+       --T 1.0 \
+       --epochs 200 \
+       --seed 0
+
+python swa.py workdir/cifar10_dkl_a4b20g02 0.9 1 200
