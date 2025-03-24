@@ -9,13 +9,13 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD      | ResNet-34 | ResNet18 | 0.319 s/iter | 71.61 | - | - | 
  | DKD           | ResNet-34 | ResNet18 | -            | 71.70 | - | - |
- | **GKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | [log](https://drive.google.com/file/d/1uFTrIfPI-7BcTfutzulTgYD6xAL5kHH2/view?usp=sharing) |
+ | **GKL-KD**    | ResNet-34 | ResNet18 | **0.197 s/iter** | **71.91** | - | [log](https://drive.google.com/file/d/1mm759Zx5Tlnv8pyFWf_SGKU8kMcdN8A3/view?usp=sharing) |
  
  | Method | Model-Teacher | Model-Student | Training Speed | Top-1 Acc(%) | link | log | 
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
  | ReviewKD    | ResNet-50 | MobileNet | 0.526 s/iter | 72.56 | - | - | 
  | DKD         | ResNet-50 | MobileNet | -            | 72.05 | - | - |
- | **GKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.92** | - | [log]() |
+ | **GKL-KD**  | ResNet-50 | MobileNet | **0.252 s/iter** | **72.92** | - | [log](https://drive.google.com/file/d/1PpSTKCxd12lzufdDNfCrCjP_iAzF4E3r/view?usp=sharing) |
 
 ## Training 
 Please refer to https://github.com/megvii-research/mdistiller for environment setup. More training scripts will be available.
