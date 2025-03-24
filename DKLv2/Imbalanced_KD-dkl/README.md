@@ -11,8 +11,8 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
  | Baseline      | - | ResNeXt101-32x4d | 48.024 | - | - |
  | KL-KD         | ResNeXt101-32x4d | ResNet18 | 44.318 | - | - |
  | KL-KD         | ResNeXt101-32x4d | ResNet50 | 48.310 | - | - |
- | **GKL-KD**    | ResNeXt101-32x4d | ResNet18 | **45.40** | - | [log]() |
- | **GKL-KD**    | ResNeXt101-32x4d | ResNet50 | **49.40** | - | [log]() |
+ | **GKL-KD**    | ResNeXt101-32x4d | ResNet18 | **45.40** | - | [log](https://drive.google.com/file/d/152BY3zoFetwhvxWVK85UPd2KYMd6_yTx/view?usp=sharing) |
+ | **GKL-KD**    | ResNeXt101-32x4d | ResNet50 | **49.40** | - | [log](https://drive.google.com/file/d/1YMKMb-FpuMhr7mTpdo0OPPYLOzFQyjRV/view?usp=sharing) |
 
  
 ## Training 
