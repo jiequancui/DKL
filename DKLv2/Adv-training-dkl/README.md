@@ -28,7 +28,7 @@ This repository contains the implementation code for our **NeurIPS 2024** paper 
 | 1 | Wang et al. (better diffusion models) 1M         | WRN-28-10 | 68.06 | 35.65 | - | - |
 | 2 | Wang et al. (better diffusion models) 50M        | WRN-28-10 | 72.58 | 38.83 | - | - |
 | 3 | **GKL-AT** 1M                                    | WRN-28-10 | 68.99 | 35.89 | - | - |
-| 4 | **GKL-AT** 50M                                   | WRN-28-10 | **73.85** | **39.18** | [model](https://drive.google.com/file/d/1Leec2X9kGBnBSuTiYytdb4_wR50ibTE8/view?usp=sharing) | [log](https://drive.google.com/file/d/1BcfEOhqGigxkI4GUmWvE27614mXEZVZP/view?usp=sharing) |
+| 4 | **GKL-AT** 50M                                   | WRN-28-10 | **73.65** | **39.37** | [model](https://drive.google.com/file/d/1H86QPlAnYZe6IVdGOhAQ73VsEBJ6VPom/view?usp=sharing) | [log](https://drive.google.com/file/d/1T7L2ofy2ETtsoCRm8kXH6614fG_WmGoB/view?usp=sharing) |
 
 
 ### CIFAR-10 with basic data preprocessing (random crop and random horizontal flip)
