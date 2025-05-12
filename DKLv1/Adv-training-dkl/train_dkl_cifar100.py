@@ -408,7 +408,7 @@ def test(model, test_loader, criterion):
 def adjust_learning_rate(optimizer, epoch):
     """decrease the learning rate"""
     lr = args.lr
-    if epcoh < args.lr_warmup:
+    if epoch < args.lr_warmup:
         lr = (args.lr / args.lr_warmup) * (epoch+1)
     else:
         lr = args.lr
