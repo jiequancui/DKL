@@ -90,7 +90,7 @@ args = parser.parse_args()
 epsilon = args.epsilon / 255
 step_size = args.step_size / 255
 if args.awp_gamma <= 0.0:
-    args.awp_warmup = np.infty
+    args.awp_warmup = np.inf
 
 if args.aug != 'basic':
     data_test = args.data[:-2]
