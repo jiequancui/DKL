@@ -1,8 +1,9 @@
 # News
+* Our paper ["Generalized Kullback-Leibler (DKL) Divergence Loss"](https://arxiv.org/pdf/2503.08038) has been accepted by **TPAMI 2026**.
 * Our new paper ["Generative Distribution Distillation"]() achieves new state-of-the-art on **supervised and unsupervised knowledge distillation**. [Code](https://github.com/jiequancui/Generative-Distribution-Distillation) is released.
 
 # Generalized Kullback-Leibler (DKL) Divergence Loss
-This repository contains the implementation code for our **NeurIPS 2024** paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948) and our arXiv paper **Generalized Kullback-Leibler Divergence Loss**, [arXiv]().
+This repository contains the implementation code for our **NeurIPS 2024** paper **Decoupled Kullback-Leibler (DKL) Divergence Loss**, [arXiv](https://arxiv.org/pdf/2305.13948) and our **TPAMI 2026** paper **Generalized Kullback-Leibler Divergence Loss**, [arXiv](https://arxiv.org/pdf/2503.08038).
 
 ## Overview
 In this paper, we delve deeper into the Kullback–Leibler (KL) Divergence loss and mathematically prove that it is equivalent to the Decoupled Kullback-Leibler (DKL) Divergence loss that consists of 1) a weighted Mean Square Error ($\mathbf{w}$MSE) loss and 2) a Cross-Entropy loss incorporating soft labels. 
